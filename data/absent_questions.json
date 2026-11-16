@@ -1,0 +1,6 @@
+[
+  {"id":"q21","split":"dev","question":"What is the name of Alice's older sister who sits with her on the bank?","answerable":false,"expected_behavior":"search_and_abstain","absence_reason":"Văn bản chỉ nhắc 'her sister' ở chương 1 và 12, không bao giờ gọi tên (grep: không có tên riêng)."},
+  {"id":"q22","split":"dev","question":"How old is Alice in the story?","answerable":false,"expected_behavior":"search_and_abstain","absence_reason":"Không có câu nào nêu tuổi của Alice (grep 'years old', 'how old', 'her age' chỉ ra các ngữ cảnh khác)."},
+  {"id":"q23","split":"test","question":"What colour is the Cheshire Cat's fur?","answerable":false,"expected_behavior":"search_and_abstain","absence_reason":"Mèo Cheshire chỉ được tả là có nụ cười và móng vuốt dài, không nêu màu lông."},
+  {"id":"q24","split":"test","question":"What is the Mad Hatter's real name?","answerable":false,"expected_behavior":"search_and_abstain","absence_reason":"Nhân vật chỉ được gọi là 'the Hatter'; văn bản không nêu tên riêng."}
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What did the White Rabbit take out of its waistcoat-pocket?",
+    "expected_answer": "A watch.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 1,
+        "evidence": "a watch out of its waistcoat-pocket"
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What was written on the jar Alice took from a shelf while falling, and what was inside it?",
+    "expected_answer": "\"ORANGE MARMALADE\"; the jar was empty.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 2,
+        "evidence": "it was labelled “ORANGE MARMALADE”, but to her great disappointment it was empty"
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Who is Dinah, the one Alice thinks will miss her that night?",
+    "expected_answer": "Alice's cat.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 3,
+        "evidence": "(Dinah was the cat.)"
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "When Alice tests her multiplication, what does she say four times five is?",
+    "expected_answer": "Twelve.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 8,
+        "evidence": "four times five is twelve, and four times six is thirteen"
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Who proposed a race as the best way for the wet animals to get dry?",
+    "expected_answer": "The Dodo (it proposed a Caucus-race).",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 14,
+        "evidence": "said the Dodo in an offended tone, “was, that the best thing to get us dry would be a Caucus-race.”"
+      }
+    ],
+    "filter": {
+      "chapter": 3
+    }
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Who was declared the winner of the Caucus-race?",
+    "expected_answer": "Everybody won, and all must have prizes.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 15,
+        "evidence": "has won, and all must have prizes.”"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Since Alice handed out the prizes, what prize did she herself receive?",
+    "expected_answer": "Her own thimble, which the Dodo solemnly presented back to her.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 16,
+        "evidence": "while the Dodo solemnly presented the thimble"
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "In the Rabbit's house, what did Alice drink that made her grow too big for the room?",
+    "expected_answer": "An unlabelled little bottle standing near the looking-glass.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 19,
+        "evidence": "her eye fell upon a little bottle that stood near the looking-glass. There was no label this time with the words “DRINK ME,”"
+      }
+    ],
+    "filter": {
+      "chapter": 4
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What did the pebbles thrown through the window turn into?",
+    "expected_answer": "Little cakes.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 24,
+        "evidence": "the pebbles were all turning into little cakes as they lay on the floor"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "According to the Caterpillar, what happens depending on which side of the mushroom Alice eats?",
+    "expected_answer": "One side makes her grow taller, the other side makes her grow shorter.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 29,
+        "evidence": "One side will make you grow taller, and the other side will make you grow shorter."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "How does the Duchess explain why her cat grins?",
+    "expected_answer": "Because it is a Cheshire cat.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 35,
+        "evidence": "“It’s a Cheshire cat,” said the Duchess, “and that’s why."
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Who does the Cat say lives in the two directions it points to?",
+    "expected_answer": "A Hatter in one direction and a March Hare in the other; both are mad.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 39,
+        "evidence": "lives a Hatter: and in _that_ direction,” waving the other paw, “lives a March Hare. Visit either you like: they’re both mad.”"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Why is it always six o'clock at the Hatter's tea-party?",
+    "expected_answer": "After the Queen shouted that he was murdering the time, Time won't do anything the Hatter asks, so it stays six o'clock.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 45,
+        "evidence": "“he won’t do a thing I ask! It’s always six o’clock now.”"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "What were the three gardeners doing to the rose-tree?",
+    "expected_answer": "Painting its white roses red.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 48,
+        "evidence": "the roses growing on it were white, but there were three gardeners at it, busily painting them red."
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "What served as balls and mallets in the Queen's croquet game?",
+    "expected_answer": "Live hedgehogs as balls and live flamingoes as mallets.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 51,
+        "evidence": "the balls were live hedgehogs, the mallets live flamingoes"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "What riddle does the Hatter ask Alice?",
+    "expected_answer": "\"Why is a raven like a writing-desk?\"",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 41,
+        "evidence": "“Why is a raven like a writing-desk?”"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "How many hours a day did the Mock Turtle do lessons, and how did that change over time?",
+    "expected_answer": "Ten hours the first day, nine the next, and so on (decreasing each day).",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 62,
+        "evidence": "“Ten hours the first day,” said the Mock Turtle: “nine the next, and so on.”"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "What does Rule Forty-two say?",
+    "expected_answer": "All persons more than a mile high must leave the court.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 77,
+        "evidence": "Rule Forty-two. _All persons more than a mile high to leave the court_."
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "At the trial, which does the Queen want to come first, the sentence or the verdict?",
+    "expected_answer": "Sentence first, verdict afterwards.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 80,
+        "evidence": "“Sentence first—verdict afterwards.”"
+      }
+    ],
+    "filter": {
+      "chapter": 12
+    }
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Who was the witness called after the Hatter, and what did she carry?",
+    "expected_answer": "The Duchess's cook, carrying the pepper-box.",
+    "gold": [
+      {
+        "source_id": "gutenberg-11",
+        "page": 75,
+        "evidence": "The next witness was the Duchess’s cook. She carried the pepper-box in her hand"
+      }
+    ],
+    "filter": {
+      "chapter": 11
+    }
+  },
+  {
+    "id": "q21",
+    "split": "dev",
+    "question": "What is the name of Alice's older sister who sits with her on the bank?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Văn bản chỉ nhắc 'her sister' ở chương 1 và 12, không bao giờ gọi tên (grep: không có tên riêng)."
+  },
+  {
+    "id": "q22",
+    "split": "dev",
+    "question": "How old is Alice in the story?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Không có câu nào nêu tuổi của Alice (grep 'years old', 'how old', 'her age' chỉ ra các ngữ cảnh khác)."
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "What colour is the Cheshire Cat's fur?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Mèo Cheshire chỉ được tả là có nụ cười và móng vuốt dài, không nêu màu lông."
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "What is the Mad Hatter's real name?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Nhân vật chỉ được gọi là 'the Hatter'; văn bản không nêu tên riêng."
+  }
+]

@@ -31,3 +31,30 @@ Index một tài liệu thực tế từ **100 trang** có bảng, ảnh và bi�
 ![Các bước thử nghiệm trên dev và đánh giá trên test](assets/experiment-loop.svg)
 
 Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/MSSV_HoTen.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+
+
+---
+
+## Bài làm: cách chạy và tái tạo (2A202603741 — Phùng Văn Thanh Cao)
+
+**Môi trường:** Python 3.13, `pip install -r requirements.txt`. Tạo `.env` từ `.env.example` (không commit `.env`). Trên Windows đặt `PYTHONUTF8=1`.
+
+**Model và phiên bản:**
+- LLM: OpenAI `gpt-4o-mini` (tool calling), `LLM_PROVIDER=openai`.
+- Embedding: `intfloat/multilingual-e5-small`, 384 chiều.
+- Vector store: Chroma `starter/data/day6/chroma_db`, collection `day06_B` (250 chunk, từ Day 6).
+- Dữ liệu: Project Gutenberg #11 (*Alice's Adventures in Wonderland*), public domain tại Hoa Kỳ.
+
+**Tái tạo dữ liệu và kết quả:**
+```bash
+python src/check_setup.py                       # kiểm tra Chroma, embedding, LLM tool calling
+python src/export_data.py                       # -> data/chunks.json, data/questions.json (đọc data/absent_questions.json)
+python src/run_retrieval_eval.py --split dev --output starter/results/retrieval-dev   # dense, BM25, hybrid RRF
+python src/agent.py --split dev --retriever hybrid_rrf --neighbors 1 --budget 4000 --output starter/results/agent-dev-exp4-neighbors-b4000
+python src/eval_traces.py starter/results/agent-dev-*   # Context Evidence Rate, chi phí
+python src/agent.py --split test --retriever hybrid_rrf --neighbors 1 --budget 4000 --output starter/results/agent-test-chosen
+python starter/agent_metrics.py --cases starter/results/agent-test-chosen/cases.json --traces starter/results/agent-test-chosen/traces.json --reviews starter/results/agent-test-chosen/reviews.json --split test --output starter/results/agent-test-chosen/summary.json
+```
+`starter/baseline.py` chỉ chấp nhận câu có `gold`, nên khi dùng cần lọc bỏ câu thiếu bằng chứng (`answerable: false`).
+
+**Mã nguồn:** `src/retrieval.py` (dense, BM25, hybrid RRF), `src/agent.py` (agent và chọn context), `src/export_data.py`, `src/run_retrieval_eval.py`, `src/eval_traces.py`. **Báo cáo:** [report/individual/2A202603741_PhungVanThanhCao.md](report/individual/2A202603741_PhungVanThanhCao.md). Kết quả và phiếu chấm nằm ở `starter/results/` (dùng `git add -f` để thêm khi nộp).
